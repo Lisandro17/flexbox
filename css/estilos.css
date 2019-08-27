@@ -1,0 +1,241 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background:#fff;
+    font-family: 'lato';
+    font-size: 16px;
+}
+/*CONTENEDOR GENERAL*/
+.contenedor{
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+       /*HEADER*/
+header{
+width: 100%;
+height: 600px;
+background-image:url('../img/portada.png');
+background-position: center;
+background-repeat: no-repeat;
+}
+
+header .menu{
+    display: flex;
+    justify-content: flex-end;
+    margin: 30px 0;
+    
+}
+header .menu a{
+    color:#fff;
+    font-size: 18px;
+    font-weight: 200;
+    text-decoration: none;
+    padding: 0px 20px 0px 20px;
+}
+header .menu a:hover{
+    
+text-decoration: underline;
+}
+.contenido-header{
+    margin-top: 100px;
+    text-align: center;
+    padding: 60px;
+}
+.titulo-header{
+font-size: 120px;
+color:#fff;
+}
+
+.contenido-header .linea-header{
+width: 90%;
+border: 1px solid #00A6FF ;
+}
+.contenido-header .parrafo-header{
+    margin-top: 20px;
+    color:#fff;
+}
+
+.boton-header{
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 17px;
+    text-decoration: none;
+    border: 1px solid #00A6FF;
+    padding: 10px;
+    color:#fff;
+}
+.boton-header:hover{
+    background:#00A6FF;
+}
+
+/*SECCION SIMPLE*/
+#simple{
+    background:#f0f3f5;
+    padding: 60px 0;
+}
+#simple .titulo-simple{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+#simple .parrafo-simple{
+    text-align: center;
+    font-size: 16px;
+    color:#999999;
+    font-weight: 600;
+}
+/*SECION ICONOS*/
+#iconos{
+    background:#fff;
+    padding: 60px 0px;
+}
+.contenedor-iconos{
+display: flex;
+justify-content: space-between;
+
+}
+.contenedor-individual{
+    width: 30%;
+    text-align: center;
+}
+.contenedor-individual h3{
+ margin-top: 20px;
+ margin-bottom: 10px;
+}
+
+/*PORTAFOLIO*/
+#portafolio{
+background: #f0f3f5;
+padding: 60px 0; 
+}
+#portafolio .contenedor-textos-portafolio .titulo-portafolio{
+    font-size: 30px;
+    font-weight: 300px;
+    color:#2d3950;
+    text-align: center;
+    padding: 10px;
+}
+#portafolio .contenedor-textos-portafolio .parrafo-portafolio{
+    font-size: 14px;
+    font-weight: 300px;
+    color:#909090;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+
+}
+.contenedor-portafolio{
+    display: flex;
+    flex-wrap: wrap;
+}
+.contenedor-portafolio img{
+    width: 30%;
+    border-radius: 10px;
+    margin: 5px;
+}
+.contenedor-portafolio img:hover{
+    opacity:0.6;
+}
+
+/*FOOTER*/
+footer{
+    background-image:url(../img/footer.png);
+    height: 600px;
+    background-position: center;
+}
+.contenedor-footer-textos h2{
+    color:#fff;
+    font-size:40px;
+    margin-top: 20px;
+    padding: 20px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.contenedor-footer-textos .parrafo-footer{
+    color:#999999;
+    font-family: arial;
+    font-weight: 100;
+    text-align: center;
+    margin-bottom: 5px;
+    
+}
+
+/*FORMULARIO*/
+form{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    justify-content: flex-start;
+    
+}
+form .input-nombre, .input-correo, .textarea{
+height: 45px;
+margin-bottom: 5px;
+background: none;
+font-size: 15px;
+color:#fff;
+padding: 10px;
+border:0;
+border:1px solid #999999;
+border-radius: 5px;
+}
+
+textarea{
+   min-height: 200px;
+   max-height: 200px;
+  
+}
+.contactar{
+ padding: 10px 20px;
+ border:1px solid #00A6FF;
+ font-size: 15px;
+ background: none;
+ color:#fff;
+}
+.contactar:hover{
+background:#00A6FF;
+cursor: pointer;
+}
+.boton{
+    display: flex;
+    justify-content: flex-end;
+}
+
+/*MEDIDAS PARA MOVILES*/
+@media screen and (max-width:600px){
+     header .contenido-header .titulo-header{
+         font-size: 60px;
+     }
+
+     #portafolio .contenedor-portafolio img{
+         width: 48%;
+     }
+     #iconos .contenedor-iconos {
+        flex-direction: column;
+    }
+    .contenedor-individual{
+        width: 100%;
+    }
+
+    header .menu{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width:360px){
+   
+    #portafolio .contenedor-portafolio img{
+        width: 37%;
+        
+    }
+    header .contenido-header .titulo-header{
+        font-size: 50px;
+    }
+}
